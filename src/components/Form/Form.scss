@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  font-size: 1.3rem;
+  margin-top: 2em;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 40%;
+    }
+    &:nth-child(3) {
+      width: 15%;
+    }
+    &:nth-child(n + 2) {
+      margin-left: 1.2em;
+    }
+  }
+  .form__input {
+    margin-top: 1em;
+    font-size: inherit;
+    padding: 0.7em;
+    border: 2px solid #000;
+    border-radius: 0.7em;
+  }
+  .form__label {
+    margin-left: 0.5em;
+  }
+  &__button {
+    font-size: inherit;
+    border: 2px solid #000;
+    border-radius: 0.7em;
+    padding: 0.7em;
+    margin-top: 41px;
+    background-color: inherit;
+  }
+}
