@@ -47,9 +47,9 @@ export default function CountingWorkouts() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <Form addWorkout={addHandler} edit={edit} />
       <Table workouts={workouts} onRemove={deletionHandler} onEdit={editigHandler} />
-    </React.Fragment>
+    </>
   )
 }
